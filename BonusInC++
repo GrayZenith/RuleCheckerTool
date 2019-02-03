@@ -1,0 +1,93 @@
+#include<fstream.h>
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+
+String CheckFor1()
+{
+	char c;
+	int counter= 0;
+	while(Myfile)
+	{ 
+        
+        if(c == '1')
+        counter++
+	}
+	if (counter<=1)
+	   return "The rule is followed"
+	else 
+	   return "The rule is not followed"   
+}
+
+
+
+
+
+void main()
+    int ch;
+	cout<<" The following rules can be checked for assignment 2 in this tool:\n";
+    cout<<"1)The digit 1 may only occur once in your .java file ";
+    cout<<"2)The digit 2 may only occur once in your .java file";
+    cout<<"3)The digits 0, 3, 4, 5, 6, 7, 8, 9 may not occur in your .java file";
+    cout<<"4)At least 3 functions/procedures must be added and used";
+    cout<<"5)One of these functions/procedures must take at least 1 int argument named iii";
+    cout<<"6)One of these functions/procedures must take at least 1 int argument named ooo";
+    cout<<"7)One of these functions/procedures must take have an int local variable named iii";
+    cout<<"8) One of these functions/procedures must take have an int local variable named ooo";
+    cout<<"9)The previous functions/procedures must be used, and must use their required argument (or local, as
+the case may be) in the computation";
+    cout<<"10)The variable ooo must be mutated (changed, assigned to) twice, and the resulting value used";
+    cout<<"11)No values of type float or double may be used, even implicitly";
+    cout<<"12)Your userid must be printed with exactly 9 digits";
+    cout<<"13)No line of code shall be longer than 80 characters";
+    cout<<"14)Your code should compile with no warnings from the Java compiler";
+    cout<<"15)Your code should not be longer than 300 lines of code";
+    cout<<"16)The use of command-line arguments is prohibited";
+    cout<<"17)To check all rules";
+    cout<<"\n Please enter the number of the rule you wish to check :";
+    cin>>ch;
+
+    switch(ch){
+    	case 1 : CheckFor1();
+    	         break;
+        case 2 : CheckFor2();
+    	         break;
+        case 3 : CheckForOther();
+    	         break;
+    	case 4 : Check3Func();
+    	         break;
+    	case 5 : 
+    	         break;         
+        case 6 : 
+    	         break;
+        case 7 : 
+    	         break;
+        case 8 : 
+    	         break;
+        case 10 : 
+    	         break;
+        case 11 : 
+    	         break;
+    	case 12 : 
+    	         break;
+    	case 13 : 
+    	         break;
+    	case 14 : 
+    	         break;
+    	case 15 : 
+    	         break;
+    	case 16 : 
+    	         break;
+    	case 17 : 
+    	         break;
+    	default : cout<<"Wrong Input";
+    	         break;
+                                                                                 
+    }
+
+    numberoflines();
+}
+void numberoflines(){
+    number_of_lines--;
+    cout<<"number of lines in text file: " << number_of_lines << endl;
+}
